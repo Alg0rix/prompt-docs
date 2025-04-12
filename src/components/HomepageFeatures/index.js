@@ -4,38 +4,35 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Comprehensive Techniques',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Explore a wide range of prompting techniques, from basic zero-shot and few-shot to advanced methods like Chain-of-Thought and Retrieval-Augmented Generation.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Best Practices & Ethics',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn best practices for crafting effective prompts and understand the crucial ethical considerations involved in responsible AI development.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Practical Examples',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Gain practical insights through clear explanations and examples, helping you apply these techniques to your own LLM projects and workflows.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

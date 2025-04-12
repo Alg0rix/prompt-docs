@@ -79,14 +79,14 @@ const config = {
         title: 'Prompt Engineering Guide',
         logo: {
           alt: 'Prompt Engineering Guide Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Prompt Types',
+            label: 'Docs',
           },
           {
             href: 'https://github.com/Alg0rix/prompt-docs',
@@ -102,7 +102,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Prompt Types',
+                label: 'Docs',
                 to: '/docs/prompt-engineering/02-prompt-types/index',
               },
             ],

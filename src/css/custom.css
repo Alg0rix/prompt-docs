@@ -6,25 +6,59 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #3a5a40;
+  --ifm-color-primary-dark: #345139;
+  --ifm-color-primary-darker: #314c36;
+  --ifm-color-primary-darkest: #283f2c;
+  --ifm-color-primary-light: #406347;
+  --ifm-color-primary-lighter: #43684a;
+  --ifm-color-primary-lightest: #4c7554;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Earth tone theme variables - Light mode */
+  --ifm-hero-bg-start: #5e503f;
+  --ifm-hero-bg-end: #8b7355;
+  --ifm-hero-text: #f2f4f3;
+  --ifm-feature-card-bg: #f2e9e4;
+  --ifm-feature-card-border: #ddd2c6;
+  --ifm-feature-icon-bg: #a3b18a;
+  --ifm-feature-icon-color: #3a5a40;
+  --ifm-guides-section-bg: #e6e2d3;
+  --ifm-guide-item-bg: #faf9f6;
+  --ifm-guide-item-border: #d4c9bc;
+  --ifm-guide-icon-color: #6b705c;
+  --ifm-cta-bg-start: #7f684c;
+  --ifm-cta-bg-end: #9c6644;
+  --ifm-card-shadow: rgba(94, 80, 63, 0.15);
+  --ifm-card-shadow-hover: rgba(94, 80, 63, 0.25);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #a3b18a;
+  --ifm-color-primary-dark: #94a67a;
+  --ifm-color-primary-darker: #8c9f70;
+  --ifm-color-primary-darkest: #738556;
+  --ifm-color-primary-light: #b2bc9a;
+  --ifm-color-primary-lighter: #bac3a4;
+  --ifm-color-primary-lightest: #d0d6c2;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Earth tone theme variables - Dark mode */
+  --ifm-hero-bg-start: #43493e;
+  --ifm-hero-bg-end: #5e5743;
+  --ifm-hero-text: #f2f4f3;
+  --ifm-feature-card-bg: #3b3935;
+  --ifm-feature-card-border: #4e493f;
+  --ifm-feature-icon-bg: #5f6b48;
+  --ifm-feature-icon-color: #c2c9aa;
+  --ifm-guides-section-bg: #333330;
+  --ifm-guide-item-bg: #3a3a38;
+  --ifm-guide-item-border: #4e493f;
+  --ifm-guide-icon-color: #a3b18a;
+  --ifm-cta-bg-start: #5c4d3a;
+  --ifm-cta-bg-end: #6d4e39;
+  --ifm-card-shadow: rgba(0, 0, 0, 0.25);
+  --ifm-card-shadow-hover: rgba(0, 0, 0, 0.4);
 }

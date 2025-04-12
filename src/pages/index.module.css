@@ -3,16 +3,271 @@
  * and scoped locally.
  */
 
+/* Hero Section */
 .heroBanner {
   padding: 4rem 0;
+  background: linear-gradient(to right, var(--ifm-hero-bg-start, #5e503f), var(--ifm-hero-bg-end, #8b7355));
+  color: var(--ifm-hero-text, #f2f4f3);
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.heroText {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 5rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.featuresContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--ifm-feature-card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px var(--ifm-card-shadow);
+  padding: 2rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--ifm-feature-card-border);
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px var(--ifm-card-shadow-hover);
+}
+
+.featureIcon {
+  color: var(--ifm-feature-icon-color);
+  background-color: var(--ifm-feature-icon-bg);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.featureText {
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Guides Section */
+.guidesSection {
+  padding: 5rem 0;
+  background-color: var(--ifm-guides-section-bg);
+}
+
+.guidesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.guideItem {
+  display: flex;
+  align-items: center;
+  background-color: var(--ifm-guide-item-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--ifm-card-shadow);
+  padding: 1.5rem;
+  width: 45%;
+  min-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--ifm-guide-item-border);
+}
+
+.guideItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px var(--ifm-card-shadow-hover);
+}
+
+.guideIcon {
+  color: var(--ifm-guide-icon-color);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.guideContent {
+  flex: 1;
+}
+
+.guideTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.guideDescription {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.5rem;
+}
+
+.guideLink {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 5rem 0;
+  background: linear-gradient(to right, var(--ifm-cta-bg-start), var(--ifm-cta-bg-end));
+  color: var(--ifm-hero-text);
+  text-align: center;
+}
+
+.ctaContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 996px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .guideItem {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons a {
+    width: 100%;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  opacity: 0.9;
+  animation: slideUp 1s ease-in-out;
+}
+
+.heroDescription {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
   }
 }
 
@@ -20,4 +275,141 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.buttons a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+}
+
+.buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Features section styling */
+.featuresSection {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.featuresHeading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* Testimonials section */
+.testimonialsSection {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.testimonialsHeading {
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.testimonialCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonialCard {
+  background-color: var(--ifm-color-emphasis-0);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  transition: transform 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.testimonialQuote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.testimonialAuthor {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  display: block;
+}
+
+.testimonialRole {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Call to action section */
+.callToAction {
+  background: linear-gradient(135deg, var(--ifm-color-primary-light) 0%, var(--ifm-color-primary) 100%);
+  padding: 6rem 0;
+  text-align: center;
+  color: white;
+}
+
+.callToActionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.callToActionDescription {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.callToActionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.callToActionButtons a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+}
+
+.callToActionButtons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 966px) {
+  .callToActionTitle {
+    font-size: 2rem;
+  }
+
+  .callToActionButtons {
+    flex-direction: column;
+  }
+
+  .callToActionButtons a:last-child {
+    margin-top: 1rem;
+    margin-left: 0 !important;
+  }
 }
