@@ -1,4 +1,18 @@
-# Website
+# Prompt Engineering Guide
+
+A comprehensive resource for prompt engineering in Large Language Models (LLMs). This documentation website provides guides, techniques, and best practices for effectively working with AI language models.
+
+## About This Project
+
+The Prompt Engineering Guide covers:
+
+- **Fundamentals**: Introduction to prompt engineering concepts
+- **Basic Techniques**: Zero-shot, one-shot, few-shot, and role-based prompting
+- **Advanced Techniques**: Chain-of-Thought, Retrieval-Augmented Generation (RAG), and prompt chaining
+- **Specialized Prompts**: Function calling, multi-modal interactions, and output constraints
+- **Responsible AI**: Safety, ethics, and mitigating risks like prompt injection
+
+Visit the live site at [https://docs.promptllm.xyz](https://docs.promptllm.xyz)
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
