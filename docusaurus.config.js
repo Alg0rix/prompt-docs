@@ -103,7 +103,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/prompt-engineering/02-prompt-types/index',
+                to: '/docs/prompt-engineering/best-practices',
               },
             ],
           },
