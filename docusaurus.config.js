@@ -74,7 +74,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/android-chrome-512x512.png',
       navbar: {
         title: 'Prompt Engineering Guide',
         logo: {
