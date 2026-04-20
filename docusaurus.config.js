@@ -139,6 +139,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/Alg0rix/prompt-docs',
               },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/marchel-fahrezi-212a87185',
+              },
             ],
           },
         ],
