@@ -82,6 +82,17 @@ const config = {
           'https://github.com/Alg0rix/prompt-docs/tree/main/',
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'useAIForCoding',
+        path: 'use-ai-for-coding',
+        routeBasePath: 'use-ai-for-coding',
+        sidebarPath: './sidebars-use-ai-for-coding.js',
+        editUrl:
+          'https://github.com/Alg0rix/prompt-docs/tree/main/',
+      },
+    ],
   ],
 
   themeConfig:
@@ -110,6 +121,13 @@ const config = {
             label: 'Beginner AI',
           },
           {
+            type: 'docSidebar',
+            docsPluginId: 'useAIForCoding',
+            sidebarId: 'useAIForCodingSidebar',
+            position: 'left',
+            label: 'Use AI for Coding',
+          },
+          {
             href: 'https://github.com/Alg0rix/prompt-docs',
             label: 'GitHub',
             position: 'right',
@@ -129,6 +147,10 @@ const config = {
               {
                 label: 'Beginner AI',
                 to: '/beginner-ai/beginner',
+              },
+              {
+                label: 'Use AI for Coding',
+                to: '/use-ai-for-coding/coding-agents',
               },
             ],
           },
