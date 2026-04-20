@@ -23,6 +23,7 @@ const sidebars = {
       items: [
         'getting-started/introduction',
         'getting-started/what-is-prompt-engineering',
+        'getting-started/using-ai-as-a-beginner',
       ],
     },
     {
