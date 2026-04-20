@@ -27,19 +27,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Beginner AI',
-      items: [
-        'getting-started/using-ai-as-a-beginner',
-        'beginner-ai/how-to-ask-ai-clearly',
-        'beginner-ai/prompt-templates-for-beginners',
-        'beginner-ai/when-to-start-a-new-chat',
-        'beginner-ai/common-ai-mistakes',
-        'beginner-ai/using-ai-safely',
-        'beginner-ai/ai-terms-explained',
-      ],
-    },
-    {
-      type: 'category',
       label: 'Prompt Engineering',
       items: [
         'prompt-engineering/best-practices',

@@ -70,6 +70,20 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'beginnerAI',
+        path: 'beginner-ai',
+        routeBasePath: 'beginner-ai',
+        sidebarPath: './sidebars-beginner-ai.js',
+        editUrl:
+          'https://github.com/Alg0rix/prompt-docs/tree/main/',
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -89,6 +103,13 @@ const config = {
             label: 'Docs',
           },
           {
+            type: 'docSidebar',
+            docsPluginId: 'beginnerAI',
+            sidebarId: 'beginnerAISidebar',
+            position: 'left',
+            label: 'Beginner AI',
+          },
+          {
             href: 'https://github.com/Alg0rix/prompt-docs',
             label: 'GitHub',
             position: 'right',
@@ -104,6 +125,10 @@ const config = {
               {
                 label: 'Docs',
                 to: '/docs/prompt-engineering/best-practices',
+              },
+              {
+                label: 'Beginner AI',
+                to: '/beginner-ai/beginner',
               },
             ],
           },
